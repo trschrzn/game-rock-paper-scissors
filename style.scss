@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #2f3d47;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    cursor: pointer;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+    p{
+        margin: 20px;
+        padding: 5px 13px;
+        border: none;
+        border-radius: 10px;
+        text-transform: uppercase;
+        &.player{
+            background: rgb(236, 52, 52);
+        }
+        &.comp{
+            background: #438b43;
+        }
+    }
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 50px 0;
+    
+    button{
+        border: none;
+        img{
+            width: 200px;
+            height: 270px;
+            pointer-events: none;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+        &.active{
+            transform: scale(1.2);
+        }
+    }
+}
+.choices{
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: none;
+    span{
+        font-weight: 700;
+    }
+    &.active{
+        display: block;
+    }
+}
+
+.resultText{
+    font-size: 60px;
+    color: #57ff57;
+    font-weight: 700;
+    text-align: center;
+}
+
+.resetGame{
+    display: none;
+    padding: 10px 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    &:hover{
+        background: #19283f;
+    }
+    &.active{
+        display: block;
+    }
+}

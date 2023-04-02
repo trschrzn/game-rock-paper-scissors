@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2f3d47;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 30px;
+}
+
+nav p {
+  margin: 20px;
+  padding: 5px 13px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+nav p.player {
+  background: #ec3434;
+}
+
+nav p.comp {
+  background: #438b43;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 50px 0;
+}
+
+.options button {
+  border: none;
+}
+
+.options button img {
+  width: 200px;
+  height: 270px;
+  pointer-events: none;
+}
+
+.options button:hover {
+  transform: scale(1.1);
+}
+
+.options button.active {
+  transform: scale(1.2);
+}
+
+.choices {
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+  display: none;
+}
+
+.choices span {
+  font-weight: 700;
+}
+
+.choices.active {
+  display: block;
+}
+
+.resultText {
+  font-size: 60px;
+  color: #57ff57;
+  font-weight: 700;
+  text-align: center;
+}
+
+.resetGame {
+  display: none;
+  padding: 10px 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+}
+
+.resetGame:hover {
+  background: #19283f;
+}
+
+.resetGame.active {
+  display: block;
+}
